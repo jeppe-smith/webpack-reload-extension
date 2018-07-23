@@ -71,13 +71,14 @@ class ExtensionReloader {
       this._server.on('connection', ws => {
         this._ws = ws
         
-        // Set up handlers and watchers the first time a connection is made.
+        // Set up the watcher the first time a connection is made.
         // We only do it the one time because the WebSocket connection is updated on the instance
         // every time a new one is made and that way we don't set up new listeners each time.
         if (!this._isConnected) {
-          this._handleWebSocketMessages()
           this._watchDone()
         }
+        
+        this._handleWebSocketMessages()
       })
     }
   }
