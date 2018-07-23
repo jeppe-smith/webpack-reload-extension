@@ -1,0 +1,25 @@
+{
+  "name": "webpack-reload-extension",
+  "version": "0.0.1",
+  "description": "Webpack plugin for auto reload of chrome extensions",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "webpack",
+    "extension",
+    "chrome",
+    "extension",
+    "auto",
+    "reload"
+  ],
+  "author": "Jeppe Smith <mail@jeppesmith.dk> (https://jeppesmith.dk)",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^2.4.1",
+    "webpack-core": "^0.6.9",
+    "ws": "^5.2.2"
+  },
+  "devDependencies": {}
+}
