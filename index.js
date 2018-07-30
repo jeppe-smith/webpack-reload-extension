@@ -135,8 +135,8 @@ class ExtensionReloader {
         chunks.forEach(chunk => {
           const { name, files } = chunk
 
-          // We only need it inserted in one file.
-          const file = files[0]
+          // We only need it inserted in one .js file.
+          const file = files.find(file => file.match(/\.js$/) !== null)
 
           if (name === this._options.contentScript) {
             compilation.assets[file] = new ConcatSource(
