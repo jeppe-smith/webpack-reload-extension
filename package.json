@@ -1,6 +1,6 @@
 {
   "name": "webpack-reload-extension",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Webpack plugin for auto reload of chrome extensions",
   "repository": {
     "type": "git",
