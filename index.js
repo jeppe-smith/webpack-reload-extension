@@ -140,17 +140,17 @@ class ExtensionReloader {
 
           if (name === this._options.contentScript) {
             compilation.assets[file] = new ConcatSource(
-              compilation.assets[file],
+              this._contentScript,
               '\n',
-              this._contentScript
+              compilation.assets[file]
             )
           }
 
           if (name === this._options.backgroundScript) {
             compilation.assets[file] = new ConcatSource(
-              compilation.assets[file],
+              this._backgroundScript,
               '\n',
-              this._backgroundScript
+              compilation.assets[file]
             )
           }
         })
